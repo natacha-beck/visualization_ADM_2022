@@ -4,9 +4,11 @@
   <head>
     <meta charset="utf-8">
 
-    <title>XXXX</title>
+    <title>
+      BrainBrowser and Visualization tools
+    </title>
 
-    <meta name="description" content="XXXX">
+    <meta name="description" content="BrainBrowser code status and other Visualization tools">
     <meta name="author" content="Natacha Beck">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -45,22 +47,224 @@
 
 
         <!-- 1st slide-->
+        <section id="top">
+          <section>
+            <h2>
+              BrainBrowser code status
+              and visualization tools
+            </h2>
+            <p>
+              <small><a href="https://github.com/natacha-beck/">Natacha Beck</a></small>
+            </p>
+          </section>
+
+          <section>
+            <h2>
+              Table of content
+            </h2>
+            <ul>
+              <li>BrainBrowser</li>
+              <ul>
+                <li>History</li>
+                <li>Official website</li>
+                <li>BigBrain Surface Viewer</li>
+                <li>BigBrain BrainBrowser</li>
+                <li>Our use</li>
+                <li>Know issues</li>
+                <li>Missing features</li>
+                <li>Github repository</li>
+              </ul>
+              <li>Other visualization tools</li>
+              <ul>
+                <li>Internal</li>
+                <li>External</li>
+              </ul>
+            </ul>
+          </section>
+        </section> <!-- top -->
+        
+        <!-- BrainBrowser -->
         <section>
-          <h2>XXX</h2>
-          <p>
-            <small><a href="https://github.com/natacha-beck/">Natacha Beck</a></small>
-          </p>
+          <h2>BrainBrowser</h2>
         </section>
 
         <section>
-          <h3></h3>
+          <h3>History</h3>
+            <ul>
+              <li>2010 to 2013: Nicolas Kassis</li>
+              <li>2013 to 2015: Tarek Sherif</li>
+              <li>2014 to 2015: Lindsay Lewis</li>
+              <li>2015 to 2017: Robert D Vincent</li>
+              <li>2016 to 2018: Jonathan Lurie</li>
+            </ul>
         </section>
-        
+
+        <section>
+          <section>
+            <h3>
+              <a href="https://brainbrowser.cbrain.mcgill.ca/#demos">
+                Official website
+              </a>
+            </h3>
+            <img src="images/BrainBrowser_main.png">
+          </section>
+
+          <section>
+            <h3>
+              <a href="https://brainbrowser.cbrain.mcgill.ca/surface-viewer#ct">
+                Surface viewer
+              </a>
+            </h3>
+            <img src="images/BrainBrowser_main_surface.png">
+          </section>
+
+          <section>
+            <h3>
+              <a href="https://brainbrowser.cbrain.mcgill.ca/macacc-viewer">
+                MACACC dataset viewer
+              </a>
+            </h3>
+            <img src="images/BrainBrowser_main_maccac.png">
+          </section>
+
+          <section>
+            <h3>
+              <a href="https://brainbrowser.cbrain.mcgill.ca/volume-viewer">
+                Volume viewer
+              </a>
+            </h3>
+            <img src="images/BrainBorwser_main_volume.png">
+          </section>
+        </section>
+
+        <section>
+          <h2>
+            <a href="http://aces.github.io/bigbrain-surface-viewer">
+              BigBrain Surface Viewer
+            </a>
+          </h2>
+          <img src="images/BigBrain_surface_viewer.png">
+        </section>
+
+        <section>
+          <h2>
+            <a href="http://natacha-beck.github.io/brainbrowser/BrainBrowserSurfaceUI/#models=models/brain-surface.obj&intensity=models/atlas-values.txt&colorMap=color_maps/spectral.txt&label=models/atlas-labels.txt">
+              BrainBrowser Surface Viewer
+            </a>
+          </h2>
+          <img src="images/BigBrain_surface.png">
+        </section>
+
+        <section>
+          <h2>
+            <a href="http://natacha-beck.github.io/brainbrowser/BrainBrowserVolumeUI/">
+              BrainBrowser Volume Viewer
+            </a>
+          </h2>
+          <img src="images/BigBrain_volume.png">
+        </section>
+
+        <section>
+          <h3>Our use</h3>
+          <ul>
+            <li>CBRAIN</li>
+            <ul>
+              <li>Civet Output</li>
+              <!-- https://portal.cbrain.mcgill.ca/userfiles/3263664 -->
+              <li>Surface viewer (.nii, .mnc, .mgh)</li>
+              <!-- https://portal.cbrain.mcgill.ca/userfiles/3972287 -->
+              <li>Overlay (experimental)</li>
+              <!-- https://portal.cbrain.mcgill.ca/userfiles/3972287 -->
+            </ul>
+            <li>BigBrain</li>
+            <li>LORIS</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>
+            Know issues (examples)
+          </h3>
+          <ul>
+            <li>Version differ between website and GitHub repo </li>
+            <li>BigBrain BrainBrowser is not part of BrainBrowser</li>
+            <li>three.js version (use v69) actual v140 (May 2022)</li>
+            <li>Transparancy in Surface viewer (when removed some shape)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>
+            Missing features (examples)
+          </h3>
+          <ul>
+            Volume viewer
+              Missing interpolation (when zooming)
+              Cross become bigger (when zooming)
+            BigBrain Surface viewer: 
+              Zoom go slower when to deep
+              No way to unload vertex data or reload vertex data
+              and others
+          </ul>
+        </section>
+
+        <section>
+          <h3>
+            GitHub repository
+          </h3>
+          <ul>
+            <li><a href="https://github.com/aces/brainbrowser">BrainBrowser</a></li>
+            <li><a href="https://github.com/aces/brainbrowser-website">BrainBrowser website</a></li>
+            <li><a href="https://github.com/aces/bigbrain-surface-viewer">BigBrain Surface Viewer</a></li>
+            <li><a href="https://github.com/natacha-beck/brainbrowser/tree/gh-pages">BigBrain BrainBrowser</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <section>
+            <h2>Other visualization tools</h2>
+          </section>
+
+          <section>
+            <h3>Internal tools</h3>
+            <ul>
+              <li>Offline</li>
+                <ul>
+                  <li><a href="https://mcin.ca/technology/visualization/display/">Display</a></li>
+                  <li><a href="https://mcin.ca/technology/visualization/atelier3d/">Atelier3D</a></li>
+                </ul>
+              <li>Online</li>
+                <ul>
+                  <li><a href="https://github.com/jonathanlurie/MincNavigator">MincNavigator</a></li>
+                  <li><a href="https://github.com/jonathanlurie/ObliqueSurface">ObliqueSurface</a></li>
+                  <li><a href="https://github.com/jonathanlurie/brainParticles">brainParticles</a></li>
+                  <li><a href="https://github.com/jonathanlurie/pixpipejs">Pixpipe</a></li>
+                </ul>
+            </ul>
+          </section>
+
+          <section>
+            <h3>External tools</h3>
+            <ul>
+              <li><a href="https://github.com/r03ert0/microdraw">MicroDraw</a></li>
+              <li><a href="https://github.com/OpenNeuroLab/BrainBox">BrainBox</a></li>
+              <li><a href="https://github.com/rii-mango/Papaya">Papaya</a></li>
+              <li><a href="https://github.com/google/neuroglancer">NeuroGlancer</a></li>
+              <li><a href="https://github.com/gallantlab/pycortex">pycortex</a></li>
+            </ul>
+            </br>
+            </br>
+            <small>
+              <a href="https://docs.google.com/spreadsheets/d/1JDBUvDTRk5rqa5eyiSMPsuMNo5y3EzK2w6EG3yZxZlg/edit?usp=sharing">Visualisation tools comparaison (2018)</a>
+            </small>  
+          </section>
+        </section>
+
         <!-- Thanks -->
         <section>
           <h2>Thanks!</h2>
           <ul>
-            <li><a href="mailto:natacha.beck@mcgill.ca">natacha.beck@mcgill.ca</a></li>
+            <li><a href="mailto:nbeck@mcin.ca">nbeck@mcin.ca</a></li>
             <li><a target="_blank" href="http://mcin-cnim.ca/">www.mcin-ncim.ca</a></li>
           </ul>
         </section>
